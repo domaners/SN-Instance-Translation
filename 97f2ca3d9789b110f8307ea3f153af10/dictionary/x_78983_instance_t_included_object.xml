@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="54a71d0a9749f110f8307ea3f153af2e" label="Included Object" max_length="40" name="x_78983_instance_t_included_object" type="collection">
+        <element label="Form" max_length="32" name="form" reference="sys_ui_form" type="reference"/>
+        <element label="Language" max_length="32" name="language" reference="x_78983_instance_t_language" type="reference"/>
+        <element label="Table" max_length="32" name="table" reference="sys_db_object" type="reference"/>
+        <element choice="1" label="Type" mandatory="true" max_length="40" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Table" sequence="10" value="table"/>
+                <element inactive_on_update="false" label="Service Portal" sequence="20" value="service_portal"/>
+                <element inactive_on_update="false" label="Catalog Item" sequence="30" value="catalog_item"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="form"/>
+        </index>
+        <index name="index2">
+            <element name="language"/>
+        </index>
+        <index name="index3">
+            <element name="table"/>
+        </index>
+    </element>
+</database>

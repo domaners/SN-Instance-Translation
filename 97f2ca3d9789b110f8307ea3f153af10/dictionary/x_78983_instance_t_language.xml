@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8e15cefd9789b110f8307ea3f153af1f" label="Language" max_length="40" name="x_78983_instance_t_language" type="collection">
+        <element label="Active" max_length="40" name="active" read_only="true" type="boolean"/>
+        <element label="Language Code" max_length="40" name="language_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>
